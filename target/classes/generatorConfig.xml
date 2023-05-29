@@ -51,9 +51,9 @@
 		<!--数据库连接信息-->
 		<jdbcConnection 
 			driverClass="com.mysql.jdbc.Driver" 
-			connectionURL="jdbc:mysql://localhost:3306/huike?useUnicode=true"
+			connectionURL="jdbc:mysql://localhost:3306/mysql?useUnicode=true"
 			userId="root" 
-			password="aa123456">
+			password="root">
 		</jdbcConnection> 
 		
 		<!-- java类型处理器
@@ -79,25 +79,24 @@
 			targetProject：目标项目，指定一个存在的目录下，生成的内容会放到指定目录中，如果目录不存在，MBG不会自动建目录
 		 -->
 		<!-- 生成模型的包名和位置entity.java -->
-        <javaModelGenerator targetPackage="com.xin.entity" targetProject="E:\workcode\mybatis-generator\src\main\java">
+        <javaModelGenerator targetPackage="com.xin.entity" targetProject="E:\workplace\mybatisGenerator\src\main\java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
 		</javaModelGenerator>
 
 		<!-- 生成的映射文件包名和位置 xml-->  
-        <sqlMapGenerator targetPackage="com.xin.mapper" targetProject="E:\workcode\mybatis-generator\src\main\java">
+        <sqlMapGenerator targetPackage="com.xin.mapper" targetProject="E:\workplace\mybatisGenerator\src\main\java">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
 		
 		<!-- 生成DAO的包名和位置 接口java-->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.xin.dao" targetProject="E:\workcode\mybatis-generator\src\main\java">
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.xin.dao" targetProject="E:\workplace\mybatisGenerator\src\main\java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
 		<!--要生成的表名-->
-		<table tableName="mybatis_review" domainObjectName="mybatisReview"/>
-		<table tableName="sys_config" domainObjectName="sysConfig"/>
-		<table tableName="sys_dept" domainObjectName="sysDept"/>
+		<table tableName="func" domainObjectName="func"/>
+		<table tableName="general_log" domainObjectName="generalLog"/>
 
 
 
