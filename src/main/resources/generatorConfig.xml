@@ -83,7 +83,6 @@
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
 		</javaModelGenerator>
-
 		<!-- 生成的映射文件包名和位置 xml-->  
         <sqlMapGenerator targetPackage="com.xin.mapper" targetProject="E:\workplace\mybatisGenerator\src\main\java">
             <property name="enableSubPackages" value="true"/>
