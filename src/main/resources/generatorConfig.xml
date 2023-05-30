@@ -51,7 +51,7 @@
 		<!--数据库连接信息-->
 		<jdbcConnection 
 			driverClass="com.mysql.jdbc.Driver" 
-			connectionURL="jdbc:mysql://localhost:3306/mysql?useUnicode=true"
+			connectionURL="jdbc:mysql://localhost:3306/test?useUnicode=true"
 			userId="root" 
 			password="root">
 		</jdbcConnection> 
@@ -94,8 +94,7 @@
         </javaClientGenerator>
 
 		<!--要生成的表名,多张表就复制多行-->
-		<table tableName="func" domainObjectName="func"/>
-		<table tableName="general_log" domainObjectName="generalLog"/>
+		<table tableName="auth_role" domainObjectName="authRole"/>
 
 
     </context>
