@@ -24,7 +24,7 @@ import org.mybatis.generator.config.PropertyRegistry;
  * 描述：
  * @since 1.9.10
  * @version 1.9.10
- * @作者：niexiaohui
+ * @作者：xin
  * @创建时间：2017年11月22日
  * @修改记录：
  */
