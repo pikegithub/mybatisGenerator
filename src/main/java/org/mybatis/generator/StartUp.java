@@ -37,7 +37,7 @@ public class StartUp {
             DefaultShellCallback callback = new DefaultShellCallback(overwrite);
             MyBatisGenerator myBatisGenerator = new MyBatisGenerator(config, callback, warnings);
             myBatisGenerator.generate(null);
-            log.info("-------执行成功--------");
+            log.info("-------执行成功-------==-");
         } catch (SQLException e) {
             e.printStackTrace();
         } catch (IOException e) {
