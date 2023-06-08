@@ -21,7 +21,7 @@ import sun.rmi.runtime.Log;
  * @since 1.9.10
  * @version 1.9.10
  * @作者：xin
- * @创建时间：2016年11月22日
+ * @创建时间：2018年11月22日
  * @修改记录：
  */
 @Slf4j
@@ -37,7 +37,7 @@ public class StartUp {
             DefaultShellCallback callback = new DefaultShellCallback(overwrite);
             MyBatisGenerator myBatisGenerator = new MyBatisGenerator(config, callback, warnings);
             myBatisGenerator.generate(null);
-            log.info("-------执行成功-------");
+            log.info("-------执行成功--------");
         } catch (SQLException e) {
             e.printStackTrace();
         } catch (IOException e) {
